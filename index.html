@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary Kittu 💕</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #d6336c;
+      animation: fadeIn 2s ease-in-out;
+    }
+    section {
+      padding: 50px 20px;
+      background: rgba(255,255,255,0.8);
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #ff4d6d;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Floating hearts */
+    .heart {
+      position: fixed;
+      bottom: -10px;
+      color: #ff4d6d;
+      font-size: 24px;
+      animation: floatUp 6s linear infinite;
+    }
+    @keyframes floatUp {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(-100vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1>💖 Happy Anniversary, Kittu 💖</h1>
+    <p>Celebrating our beautiful journey together</p>
+  </header>
+
+  <section>
+    <h2>Our Memories</h2>
+    <p>From the very first day we met to this special moment, every memory with you is priceless. 💕</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <img src="https://via.placeholder.com/200" alt="Memory 1">
+    <img src="https://via.placeholder.com/200" alt="Memory 2">
+    <img src="https://via.placeholder.com/200" alt="Memory 3">
+  </section>
+
+  <section>
+    <h2>Why I Love You</h2>
+    <p>You make me smile every single day. Your kindness, your laugh, your love — they mean the world to me. 🌍❤️</p>
+  </section>
+
+  <section>
+    <h2>Love Letter</h2>
+    <p>My dearest Kittu,<br>
+    This past year with you has been the best chapter of my life. Thank you for being by my side, for loving me, and for making my world brighter. I can’t wait to create many more memories with you. 💌</p>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ just for you, Kittu</p>
+  </footer>
+
+  <!-- Floating hearts animation -->
+  <script>
+    function createHeart(){
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerText = '❤';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = Math.random() * 20 + 15 + 'px';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 500);
+  </script>
+</body>
+</html>
